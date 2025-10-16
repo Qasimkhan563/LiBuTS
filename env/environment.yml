@@ -26,6 +26,7 @@ dependencies:
   - nco
   - jupyterlab
   - notebook
+  - pytest
   - pip
   - pip:
       - copernicusmarine
