@@ -1,0 +1,32 @@
+# ============================================================
+# LiBuTS — Citation File Format (CFF)
+# ============================================================
+
+cff-version: 1.2.0
+title: "LiBuTS — Light-Budget Twin for Seagrass Restoration"
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Qasim"
+    given-names: "Muhammad"
+    affiliation: "Independent Researcher — Earth Observation & AI"
+    orcid: "https://orcid.org/0009-0009-0427-9049" 
+version: "1.0.0"
+date-released: "2025-10-16"
+license: "MIT"
+repository-code: "https://github.com/<your-username>/LiBuTS"
+keywords:
+  - Seagrass
+  - Restoration
+  - Digital Twin
+  - Copernicus Marine
+  - GEBCO
+  - Explainable AI
+  - NSGA-II
+  - Climate Adaptation
+abstract: |
+  LiBuTS (Light-Budget Twin for Seagrass Restoration) integrates Copernicus Marine optical data,
+  NASA POWER surface irradiance, and GEBCO 2025 bathymetry to model light-driven seagrass
+  suitability and carbon storage potential in the Baltic Sea. The pipeline combines
+  physics-based modeling, Random Forest + SHAP explainability, uncertainty quantification,
+  and NSGA-II optimization for restoration planning. It includes a fully interactive
+  Panel dashboard for exploration and policy communication.
