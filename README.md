@@ -5,38 +5,43 @@ A **physics-guided, explainable-AI digital twin** that integrates **Copernicus M
 ---
 
 ## 🧠 Concept
-LiBuTS fuses satellite optics, physics-based PAR modeling, and explainable ML to reveal where seagrass can thrive despite turbidity and artificial-light pressures in the Baltic Sea.
+
+LiBuTS fuses satellite optics, physics-based PAR modeling, and explainable machine learning to reveal where seagrass can thrive despite turbidity and artificial-light pressures in the Baltic Sea.
 
 ---
 
 ## ⚙️ Pipeline Overview
 
-| Step | Script | Purpose | Output |
-|:--|:--|:--|:--|
-| 1️⃣ | `01_inputs_retrieval.py` | Fetch KD490 + ADG443 + APH443 + BBP443 (OLCI) + PAR (NASA) + Depth (GEBCO) | `greifswalder_inputs_clean.nc` |
-| 2️⃣ | `02_physics_suitability.py` | Compute Euphotic Depth & PAR at Bed → SSI | `greifswalder_step2_physics.nc` |
-| 3️⃣ | `03_ml_rf_shap.py` | Random Forest + SHAP Explainability | `greifswalder_step3_ml.nc` |
-| 4️⃣ | `04_uncertainty_enrichment.py` | Add drivers + bootstrap uncertainty | `greifswalder_step4_physics_uncertainty.nc` |
-| 5️⃣ | `05_restoration_planner.py` | NSGA-II multi-objective restoration planner | `restoration_sites.gpkg` |
-| 💻 | `app/dashboard.py` | Interactive digital-twin dashboard | Web app on port 5016 |
+| Step | Script                         | Purpose                                                                    | Output                                      |
+| :--- | :----------------------------- | :------------------------------------------------------------------------- | :------------------------------------------ |
+| 1️⃣  | `01_inputs_retrieval.py`       | Fetch KD490 + ADG443 + APH443 + BBP443 (OLCI) + PAR (NASA) + Depth (GEBCO) | `greifswalder_inputs_clean.nc`              |
+| 2️⃣  | `02_physics_suitability.py`    | Compute Euphotic Depth & PAR at Bed → SSI                                  | `greifswalder_step2_physics.nc`             |
+| 3️⃣  | `03_ml_rf_shap.py`             | Random Forest + SHAP Explainability                                        | `greifswalder_step3_ml.nc`                  |
+| 4️⃣  | `04_uncertainty_enrichment.py` | Add drivers + bootstrap uncertainty                                        | `greifswalder_step4_physics_uncertainty.nc` |
+| 5️⃣  | `05_restoration_planner.py`    | NSGA-II multi-objective restoration planner                                | `restoration_sites.gpkg`                    |
+| 💻   | `app/dashboard.py`             | Interactive digital-twin dashboard                                         | Web app (port 5016)                         |
 
 ---
 
 ## 🚀 Quick Start
+
 ```bash
 cd env
 conda env create -f environment.yml
 conda activate libuts
 make all
 make app
+```
 
+---
 
-✅ Validation & Testing
+## ✅ Validation & Testing
 
 To verify the entire LiBuTS pipeline, run:
 
-```pytest -v vignettes/
----
+```bash
+pytest -v vignettes/
+```
 
 All six vignettes should pass:
 1️⃣ Inputs retrieval
@@ -45,10 +50,15 @@ All six vignettes should pass:
 4️⃣ Uncertainty enrichment
 5️⃣ Restoration planner
 6️⃣ Dashboard runtime test
+
 ---
-🧩 Citation
+
+## 🧩 Citation
 
 If you use LiBuTS, please cite:
 
-Qasim, M. (2025). Light-Budget Twin for Seagrass Restoration (LiBuTS).
-Copernicus Marine / NASA POWER / GEBCO integration. DOI: [https://doi.org/10.5281/zenodo.17372370]
+**Qasim, M. (2025). *Light-Budget Twin for Seagrass Restoration (LiBuTS).***
+Copernicus Marine / NASA POWER / GEBCO integration.
+DOI: [https://doi.org/10.5281/zenodo.17372370](https://doi.org/10.5281/zenodo.17372370)
+
+---
