@@ -45,7 +45,7 @@ All six vignettes should pass:
 4️⃣ Uncertainty enrichment
 5️⃣ Restoration planner
 6️⃣ Dashboard runtime test
-
+---
 🧩 Citation
 
 If you use LiBuTS, please cite:
