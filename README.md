@@ -31,9 +31,22 @@ make all
 make app
 
 
+✅ Validation & Testing
 
-## ✅ Validation & Testing
 To verify the entire LiBuTS pipeline, run:
 
-```bash
-pytest -v vignettes/
+```pytest -v vignettes/
+All six vignettes should pass:
+1️⃣ Inputs retrieval
+2️⃣ Physics model
+3️⃣ ML + SHAP
+4️⃣ Uncertainty enrichment
+5️⃣ Restoration planner
+6️⃣ Dashboard runtime test
+
+🧩 Citation
+
+If you use LiBuTS, please cite:
+
+Qasim, M. (2025). Light-Budget Twin for Seagrass Restoration (LiBuTS).
+Copernicus Marine / NASA POWER / GEBCO integration. DOI: https://doi.org/10.5281/zenodo.17372370
