@@ -32,4 +32,5 @@ jobs:
       - name: Run vignettes tests
         shell: bash -l {0}
         run: |
+          conda install -y pytest
           pytest -v vignettes/
