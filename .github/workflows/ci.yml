@@ -17,16 +17,19 @@ jobs:
       - name: Set up Miniconda
         uses: conda-incubator/setup-miniconda@v3
         with:
-          activate-environment: libuts
           environment-file: env/environment.yml
-          python-version: 3.10
+          activate-environment: libuts
           auto-activate-base: false
           channels: conda-forge,defaults
+          use-mamba: true
 
       - name: Verify environment
+        shell: bash -l {0}
         run: |
           conda info
-          conda list | head -n 15
+          conda list | head -n 10
 
       - name: Run vignettes tests
-        run: pytest -v vignettes/
+        shell: bash -l {0}
+        run: |
+          pytest -v vignettes/
