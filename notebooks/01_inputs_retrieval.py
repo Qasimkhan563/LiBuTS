@@ -15,9 +15,9 @@ from copernicusmarine import open_dataset, login
 # --------------------------------------------------------------
 # 1️⃣  Credentials  (replace with your own)
 # --------------------------------------------------------------
-#USERNAME = "your_copernicus_username"
-#PASSWORD = "your_copernicus_password"
-#login(USERNAME, PASSWORD)
+USERNAME = "khanjiqasim@gmail.com"
+PASSWORD = "Qasim@563123"
+login(USERNAME, PASSWORD)
 
 # --------------------------------------------------------------
 # 2️⃣  Define AOI & period
@@ -81,7 +81,7 @@ par_surface.attrs["units"] = "E m⁻² d⁻¹"
 # ==============================================================
 
 print("🔹 Reading and clipping GEBCO 2025 bathymetry …")
-gebco_path = "gebco_2025.nc"
+gebco_path = "data/gebco_2025.nc"
 
 depth = (
     xr.open_dataset(gebco_path)["elevation"]

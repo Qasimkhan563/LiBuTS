@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 # ---------------------------------------------------------------------
 # 1️⃣ Load datasets
 # ---------------------------------------------------------------------
-opt = xr.open_dataset("outputs/greifswalder_inputs_clean.nc")[["KD490","ADG443","APH443","BBP443"]]
+opt = xr.open_dataset("outputs/greifswalder_inputs.nc")[["KD490","ADG443","APH443","BBP443"]]
 phy = xr.open_dataset("outputs/greifswalder_step2_physics.nc")[["SSI","depth","Zeu","PAR_bed"]]
 
 # ---------------------------------------------------------------------

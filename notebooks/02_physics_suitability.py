@@ -3,7 +3,7 @@ import xarray as xr
 import matplotlib.pyplot as plt
 
 # Load cleaned dataset
-ds = xr.open_dataset("outputs/greifswalder_inputs_clean.nc")
+ds = xr.open_dataset("outputs/greifswalder_inputs.nc")
 
 # ---------------------------------------------------------------------
 # 1️⃣ Compute Euphotic Depth (Zeu)
