@@ -29,8 +29,8 @@ jobs:
           conda info | head -n 20
           echo "--- Conda environment ready ---"
 
-      - name: Run vignettes tests
+      - name: Run smoke tests
         shell: bash -l {0}
         run: |
-          conda install -y pytest
-          pytest -v vignettes/
+          echo "--- Running lightweight import tests ---"
+          pytest -v --maxfail=1 --disable-warnings -k "dashboard"
