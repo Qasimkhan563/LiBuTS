@@ -35,3 +35,8 @@ app:
 clean:
 	@echo "🧹 Cleaning outputs..."
 	rm -rf outputs/*
+
+test:
+	@echo "🧪 Running LiBuTS full validation suite..."
+	pytest -v vignettes/
+

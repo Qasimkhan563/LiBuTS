@@ -29,3 +29,9 @@ conda env create -f environment.yml
 conda activate libuts
 make all
 make app
+
+### ✅ Validation & Testing
+To verify the entire LiBuTS pipeline, run:
+
+```bash
+pytest -v vignettes/
