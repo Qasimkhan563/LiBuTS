@@ -36,16 +36,17 @@ jobs:
           mkdir -p outputs
           # Create a minimal valid NetCDF structure so xarray can open it
           python - <<'EOF'
-import xarray as xr
-import numpy as np
-import os
-os.makedirs("outputs", exist_ok=True)
-dummy = xr.Dataset(
-    {"SSI_ML": (("lat", "lon"), np.random.rand(2, 2))},
-    coords={"lat": [54.1, 54.2], "lon": [13.6, 13.7]}
-)
-dummy.to_netcdf("outputs/greifswalder_step3_ml.nc")
-EOF
+          import xarray as xr
+          import numpy as np
+          import os
+
+          os.makedirs("outputs", exist_ok=True)
+          dummy = xr.Dataset(
+              {"SSI_ML": (("lat", "lon"), np.random.rand(2, 2))},
+              coords={"lat": [54.1, 54.2], "lon": [13.6, 13.7]}
+          )
+          dummy.to_netcdf("outputs/greifswalder_step3_ml.nc")
+          EOF
           echo "✅ Dummy outputs created."
 
       - name: Run smoke tests
