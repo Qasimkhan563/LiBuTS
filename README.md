@@ -37,6 +37,7 @@ To verify the entire LiBuTS pipeline, run:
 
 ```pytest -v vignettes/
 
+---
 
 All six vignettes should pass:
 1️⃣ Inputs retrieval
