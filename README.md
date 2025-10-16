@@ -1,3 +1,6 @@
+![LiBuTS CI](https://github.com/Qasimkhan563/LiBuTS/actions/workflows/ci.yml/badge.svg)
+
+
 # 🌊 LiBuTS — Light-Budget Twin for Seagrass Restoration
 
 A **physics-guided, explainable-AI digital twin** that integrates **Copernicus Marine**, **NASA POWER**, and **GEBCO 2025** data to map and optimize **seagrass restoration zones** under light- and uncertainty-driven scenarios.
