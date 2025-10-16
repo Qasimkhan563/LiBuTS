@@ -26,8 +26,8 @@ jobs:
       - name: Verify environment
         shell: bash -l {0}
         run: |
-          conda info
-          conda list | head -n 10
+          conda info | head -n 20
+          echo "--- Conda environment ready ---"
 
       - name: Run vignettes tests
         shell: bash -l {0}
