@@ -20,8 +20,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r <(conda env export --no-builds | grep -v "^prefix")
+          conda env create -f env/environment.yml || conda env update -f env/environment.yml
+          conda activate libuts || source activate libuts
           pip install pytest
+
 
       - name: Run vignettes tests
         run: pytest -v vignettes/
