@@ -293,7 +293,7 @@ tabs = pn.Tabs(
 )
 
 dashboard = pn.template.MaterialTemplate(
-    title="🌊 LiBuTS Pro++ — Seagrass Restoration Digital Twin",
+    title="🌊 LiBuTS — Seagrass Restoration Digital Twin",
     sidebar=[sidebar],
     main=[tabs],
 )
