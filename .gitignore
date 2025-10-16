@@ -1,0 +1,55 @@
+# ============================================================
+# LiBuTS — .gitignore
+# ============================================================
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+*.pyo
+*.~*
+
+# Jupyter & Notebooks
+.ipynb_checkpoints/
+*.ipynb
+*.ipynb_meta.json
+
+# Environment & Build
+env/libuts/
+env/libuts.yml
+*.env
+*.lock
+*.bak
+*.log
+*.egg-info/
+*.tar.gz
+*.whl
+
+# Outputs & Derived Data
+outputs/*.nc
+outputs/*.csv
+outputs/*.png
+outputs/*.gpkg
+outputs/*.zip
+outputs/*.json
+
+# Temporary files
+temp/
+tmp/
+cache/
+*.aux
+*.out
+
+# Large or sensitive data
+data/*.nc
+data/*.tif
+data/*.h5
+data/*.grib
+data/*.zip
+
+# OS hidden files
+*.swp
+*.swo
