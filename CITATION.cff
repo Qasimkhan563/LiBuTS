@@ -9,7 +9,7 @@ authors:
   - family-names: "Qasim"
     given-names: "Muhammad"
     affiliation: "Independent Researcher — Earth Observation & AI"
-    orcid: "https://orcid.org/0009-0009-0427-9049"  # (add if available)
+    orcid: "https://orcid.org/0009-0009-0427-9049" 
 version: "1.0.0"
 date-released: "2025-10-16"
 license: "MIT"
