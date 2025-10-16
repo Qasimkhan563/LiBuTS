@@ -30,8 +30,9 @@ conda activate libuts
 make all
 make app
 
+
 ---
-### ✅ Validation & Testing
+## ✅ Validation & Testing
 To verify the entire LiBuTS pipeline, run:
 
 ```bash
