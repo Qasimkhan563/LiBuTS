@@ -36,6 +36,8 @@ make app
 To verify the entire LiBuTS pipeline, run:
 
 ```pytest -v vignettes/
+
+
 All six vignettes should pass:
 1️⃣ Inputs retrieval
 2️⃣ Physics model
@@ -49,4 +51,4 @@ All six vignettes should pass:
 If you use LiBuTS, please cite:
 
 Qasim, M. (2025). Light-Budget Twin for Seagrass Restoration (LiBuTS).
-Copernicus Marine / NASA POWER / GEBCO integration. DOI: https://doi.org/10.5281/zenodo.17372370
+Copernicus Marine / NASA POWER / GEBCO integration. DOI: [https://doi.org/10.5281/zenodo.17372370]
