@@ -34,7 +34,6 @@ jobs:
         run: |
           echo "--- Creating dummy output files for dashboard import ---"
           mkdir -p outputs
-          # Create a minimal valid NetCDF structure so xarray can open it
           python - <<'EOF'
           import xarray as xr
           import numpy as np
@@ -44,7 +43,11 @@ jobs:
           dummy = xr.Dataset(
               {
                   "SSI": (("lat", "lon"), np.random.rand(2, 2)),
-                  "SSI_ML": (("lat", "lon"), np.random.rand(2, 2))
+                  "SSI_ML": (("lat", "lon"), np.random.rand(2, 2)),
+                  "KD490": (("lat", "lon"), np.random.rand(2, 2)),
+                  "ADG443": (("lat", "lon"), np.random.rand(2, 2)),
+                  "APH443": (("lat", "lon"), np.random.rand(2, 2)),
+                  "BBP443": (("lat", "lon"), np.random.rand(2, 2))
               },
               coords={"lat": [54.1, 54.2], "lon": [13.6, 13.7]}
           )
