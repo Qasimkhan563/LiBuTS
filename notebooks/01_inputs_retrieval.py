@@ -15,8 +15,8 @@ from copernicusmarine import open_dataset, login
 # --------------------------------------------------------------
 # 1️⃣  Credentials  (replace with your own)
 # --------------------------------------------------------------
-USERNAME = "khanjiqasim@gmail.com"
-PASSWORD = "Qasim@563123"
+USERNAME = "test@example.com"
+PASSWORD = "Your password for copernicus marine"
 login(USERNAME, PASSWORD)
 
 # --------------------------------------------------------------
