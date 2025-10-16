@@ -42,7 +42,10 @@ jobs:
 
           os.makedirs("outputs", exist_ok=True)
           dummy = xr.Dataset(
-              {"SSI_ML": (("lat", "lon"), np.random.rand(2, 2))},
+              {
+                  "SSI": (("lat", "lon"), np.random.rand(2, 2)),
+                  "SSI_ML": (("lat", "lon"), np.random.rand(2, 2))
+              },
               coords={"lat": [54.1, 54.2], "lon": [13.6, 13.7]}
           )
           dummy.to_netcdf("outputs/greifswalder_step3_ml.nc")
