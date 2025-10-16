@@ -31,7 +31,7 @@ make all
 make app
 
 
----
+
 ## ✅ Validation & Testing
 To verify the entire LiBuTS pipeline, run:
 
