@@ -62,6 +62,5 @@ If you use LiBuTS, please cite:
 
 **Qasim, M. (2025). *Light-Budget Twin for Seagrass Restoration (LiBuTS).***
 Copernicus Marine / NASA POWER / GEBCO integration.
-DOI: [https://doi.org/10.5281/zenodo.17372370](https://doi.org/10.5281/zenodo.17372370)
-
+DOI: https://doi.org/10.5281/zenodo.17373445
 ---
