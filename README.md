@@ -22,7 +22,7 @@ LiBuTS fuses satellite optics, physics-based PAR modeling, and explainable machi
 | 3️⃣  | `03_ml_rf_shap.py`             | Random Forest + SHAP Explainability                                        | `greifswalder_step3_ml.nc`                  |
 | 4️⃣  | `04_uncertainty_enrichment.py` | Add drivers + bootstrap uncertainty                                        | `greifswalder_step4_physics_uncertainty.nc` |
 | 5️⃣  | `05_restoration_planner.py`    | NSGA-II multi-objective restoration planner                                | `restoration_sites.gpkg`                    |
-| 💻   | `app/dashboard.py`             | Interactive digital-twin dashboard                                         | Web app (port 5016)                         |
+| 💻   | `app/dashboard.py`             | Interactive digital-twin dashboard                                         | Web app (port e.g., 5016 changes everytime)                         |
 
 ---
 
